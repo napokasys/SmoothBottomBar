@@ -1,11 +1,6 @@
 # SmoothBottomBar
 
-A lightweight Android material bottom navigation bar library
-
-[![](https://jitpack.io/v/ibrahimsn98/SmoothBottomBar.svg)](https://jitpack.io/#ibrahimsn98/SmoothBottomBar)
-[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-SmoothBottomBar-green.svg?style=flat )]( https://android-arsenal.com/details/1/7932 )
-[![Android Weekly](https://androidweekly.net/issues/issue-385/badge)](https://androidweekly.net/issues/issue-385)
+A lightweight Android material bottom navigation bar library forked from [SmoothBottomBar](https://github.com/ibrahimsn98/SmoothBottomBar)
 
 ## GIF
 
@@ -205,8 +200,6 @@ Result:
 
 ## Setup
 
-> Follow me on Twitter [@ibrahimsn98](https://twitter.com/ibrahimsn98)
-
 ```gradle
 allprojects {
 	repositories {
@@ -216,47 +209,9 @@ allprojects {
 }
 
 dependencies {
-        implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.6'
+        implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.8'
 }
 ```
-
-## Contributors ✨
-<table>
-    <tr>
-        <td align="center">
-            <a href="https://github.com/brookmg">
-                <img src="https://avatars3.githubusercontent.com/u/7487888?s=460&u=7ba52b250536b301987aaa350f605bbaf3ffa8ed&v=4" width="100px;" alt=""/><br />
-                <sub><b>brookmg</b></sub>
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/rezaepsilon0">
-                <img src="https://avatars0.githubusercontent.com/u/18679475?s=460&u=a5e771cc32bff987aceccafa55edab06a8aa804f&v=4" width="100px;" alt=""/><br />
-                <sub><b>rezaepsilon0</b></sub>
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/amitdash291">
-                <img src="https://avatars2.githubusercontent.com/u/18529185?s=460&v=4" width="100px;" alt=""/><br />
-                <sub><b>amitdash291</b></sub>
-            </a>
-        </td>
-           <td align="center">
-            <a href="https://github.com/tobiasschuerg">
-                <img src="https://avatars2.githubusercontent.com/u/1324555?s=460&v=4" width="100px;" alt=""/><br />
-                <sub><b>tobiasschuerg</b></sub>
-            </a>
-        </td>
-        </td>
-           <td align="center">
-            <a href="https://github.com/mayokunthefirst">
-                <img src="https://avatars0.githubusercontent.com/u/29807085?s=460&u=493fd9b143dd96eecea56749f57d20e002e246e4&v=4" width="100px;" alt=""/><br />
-                <sub><b>mayokunthefirst</b></sub>
-            </a>
-        </td>
-    </tr>
-</table>
-
 
 ## License
 

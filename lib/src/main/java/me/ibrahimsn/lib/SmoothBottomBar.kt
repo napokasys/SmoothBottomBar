@@ -342,7 +342,7 @@ class SmoothBottomBar @JvmOverloads constructor(
         for (item in itemsToLayout) {
             // Prevent text overflow by shortening the item title
             var shorted = false
-            while (paintText.measureText(item.title) > itemWidth - itemIconSize - itemIconMargin - (itemPadding * 2)) {
+            while (paintText.measureText(item.title) > itemWidth - itemIconSize - itemIconMargin - (itemPadding * 1.5)) {
                 item.title = item.title.dropLast(1)
                 shorted = true
             }
@@ -406,10 +406,10 @@ class SmoothBottomBar @JvmOverloads constructor(
                 item.icon.mutate()
                 item.icon.setBounds(
                     item.rect.centerX()
-                        .toInt() - itemIconSize.toInt() / 2 + ((textLength / 2) * (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
+                        .toInt() - itemIconSize.toInt() / 2 + (((textLength / 2)  + itemIconMargin) * (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
                     height / 2 - itemIconSize.toInt() / 2,
                     item.rect.centerX()
-                        .toInt() + itemIconSize.toInt() / 2 + ((textLength / 2) * (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
+                        .toInt() + itemIconSize.toInt() / 2 + (((textLength / 2)  + itemIconMargin)* (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
                     height / 2 + itemIconSize.toInt() / 2
                 )
 
@@ -418,7 +418,7 @@ class SmoothBottomBar @JvmOverloads constructor(
                 paintText.alpha = item.alpha
                 canvas.drawText(
                     item.title,
-                    item.rect.centerX() - (itemIconSize / 2 + itemIconMargin),
+                    item.rect.centerX() - itemIconSize / 2 + itemIconMargin,
                     item.rect.centerY() - textHeight, paintText
                 )
             }
@@ -430,10 +430,10 @@ class SmoothBottomBar @JvmOverloads constructor(
                 item.icon.mutate()
                 item.icon.setBounds(
                     item.rect.centerX()
-                        .toInt() - itemIconSize.toInt() / 2 - ((textLength / 2) * (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
+                        .toInt() - itemIconSize.toInt() / 2 - (((textLength / 2)  + itemIconMargin) * (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
                     height / 2 - itemIconSize.toInt() / 2,
                     item.rect.centerX()
-                        .toInt() + itemIconSize.toInt() / 2 - ((textLength / 2) * (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
+                        .toInt() + itemIconSize.toInt() / 2 - (((textLength / 2)  + itemIconMargin) * (1 - (OPAQUE - item.alpha) / OPAQUE.toFloat())).toInt(),
                     height / 2 + itemIconSize.toInt() / 2
                 )
 
